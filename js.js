@@ -24,7 +24,7 @@ let a=companies.forEach((i,index,companies)=>{
         return true
         console.log(i.age);
     }
-// console.log(companies)  it will print the array as much as the index of the array for example if the total index count is 5 then it will print the array 5 times
+console.log(companies)  //it will print the array as much as the index of the array for example if the total index count is 5 then it will print the array 5 times
 // console.log(companies[index])
 },this)
 //-----------------------------------------------------filter-------------------------------------------------------
@@ -148,7 +148,7 @@ console.log(x);
 // console.log(y); it can be visible with var,let, const keyword
 // y will not be visible outside using the var keyword
 
-// --------------------------------------------ibnterview question---------------------------------------------------
+// --------------------------------------------interview question---------------------------------------------------
 // 1)what is the value of y here
 var y=2;
 let z=function(){
@@ -164,15 +164,15 @@ console.log(ye);
 var ye=12;
 }
 xx();
-//  ANS - undefined
+//  ANS - undefined because the var keyword is not hoisted inside the function
 
 // what is the oiutput of this code
 var yee=22
 let xxx=function(){
 var yee=1;
-console.log(yee);
+console.log(yee); //the output of the the code will be 1
 }
-console.log(yee);
+console.log(yee);// the output of the code will be 22
 xxx();
 
 // what is the output of this code
@@ -186,7 +186,7 @@ console.log(ages.indexOf(231453));
 // ANS - 1
 // explanation - if an array dont have have with the index like a[12432] then it returns -1 
 // arr[1233]=-1 and arr[-1] here is 1 so the result is 1
-console.log( ages.sort((a,b)=>{
+console.log(ages.sort((a,b)=>{
     return a<b;
 }));
 // console.log(s);
@@ -209,7 +209,7 @@ console.log(666666666666666666666); //666666666666666600000
 console.log(b,a); //10,undefined because b is  global varibale here cause its not decalred with let and var in function
 
 console.log(NaN===NaN); //false
-// false because when when we compare somethin g with Nan it will give me false even when it compare with itself also
+// false because when when we compare something with Nan it will give me false even when it compare with itself also
 
 console.log({}+[]); // [object object]
 console.log([]+[]); //empty string
